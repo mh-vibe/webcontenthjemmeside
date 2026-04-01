@@ -1,0 +1,234 @@
+.section {
+  padding: 80px 0;
+  background: white;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.card {
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.cardHighlight {
+  background: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  color: white;
+}
+
+.popularBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.planName {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.cardHighlight .planName {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.priceAmount {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.cardHighlight .priceAmount {
+  color: white;
+}
+
+.priceLabel {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.cardHighlight .priceLabel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.scaleNote {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: -12px;
+}
+
+.scaleFor {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  margin-top: -8px;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.cardHighlight .feature {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.checkIcon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.checkIconHighlight {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(243, 88, 74, 0.2);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.soloBtn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: white;
+  color: var(--color-text-primary);
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: border-color 0.15s, transform 0.1s;
+}
+
+.soloBtn:hover {
+  border-color: var(--color-text-muted);
+  transform: translateY(-1px);
+}
+
+.scaleBtn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.scaleBtn:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.usedBy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.usedByLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.brandLogos {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .card {
+    padding: 28px 24px;
+  }
+}

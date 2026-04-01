@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "features": "Funktioner",
+    "pricing": "Priser",
+    "resources": "Ressourcer",
+    "about": "Om os",
+    "becomeCreator": "Bliv Creator",
+    "login": "Login",
+    "startFree": "Start gratis",
+    "blog": "Blog",
+    "cases": "Cases",
+    "support": "Support",
+    "ugcPricing": "UGC Creator priser",
+    "localCreators": "Lokale Creators",
+    "bestCreators": "Bedste Creators",
+    "ugcTypes": "UGC Typer",
+    "aiCenter": "AI Center",
+    "brollBank": "B-roll Bank"
+  },
+  "hero": {
+    "badge": "Til brands",
+    "headline": "Øg din performance med datadrevne kreativer",
+    "subheadline": "Vi skaber målbar vækst for ambitiøse DTC-brands gennem top-tier creators fra hele Skandinavien",
+    "cta1": "Øg din performance nu",
+    "cta2": "Få gratis gennemgang",
+    "stat1": "+2.500 creators",
+    "stat2": "Bedømt 4,6/5 på Trustpilot",
+    "stat3": "9,1/10 kundetilfredshed på +200 kampagner"
+  },
+  "scaleSection": {
+    "headline": "Skaler dine UGC-ads nemt med WebContent",
+    "subheadline": "Opret et kampagne brief på få minutter. Betal kun for godkendt indhold.",
+    "cta1": "Opret første kampagne",
+    "cta2": "Book demo med Seb",
+    "feature1Title": "Flere klik, mere salg – ingen gæt",
+    "feature1Sub": "Lancér annoncer der konverterer",
+    "feature2Title": "Content folk stoler på",
+    "feature2Desc": "Opbyg tillid med content fra ægte mennesker, der føles naturligt og skaber forbindelse til dit publikum.",
+    "feature3Title": "Baseret på ægte data",
+    "feature3Desc": "Alt vores data er baseret på indsigter fra over 10.000 videoannoncer fra skandinaviske ecommerce stores.",
+    "feature4Title": "Problemfri produktion",
+    "feature4Desc": "Ingen spildtid eller lange tidsplaner. Kun autentiske creator-annoncer, leveret hurtigt og klar til brug.",
+    "expertsIn": "Eksperter i:"
+  },
+  "whySection": {
+    "badge": "det bedste valg til annoncer der performer",
+    "headline": "Derfor vælger ambitiøse DTC-brands WebContent",
+    "feature1Title": "UGC videoer fra 500 DKK",
+    "feature1Desc": "Få UGC-videoer helt ned til 500 DKK - uden mellemled, chat eller besværlig kommunikation. Vores netværk af creators står klar til at levere content hurtigt og nemt.",
+    "feature1Link": "UGC Creator priser",
+    "feature2Title": "Lokale Creators til enhver branche",
+    "feature2Link": "Se flere Creators",
+    "feature3Title": "Vi forbinder dig med de bedste Creators",
+    "feature3Desc": "Vi håndplukker kun de bedste creators, så du slipper for at lede selv. Alle på platformen er testet for kvalitet – og vi hjælper dem løbende med at blive endnu bedre.",
+    "feature3Sub": "Alt uden chat eller tidskrævende kommunikation.",
+    "feature3Link": "Hvorfor er vores Creators de bedste?",
+    "feature4Title": "Vi dækker alle typer UGC indhold",
+    "feature4Link": "Se alle typer UGC",
+    "feature5Title": "Mød vores AI Center",
+    "feature5Desc": "Skab og skaler UGC-ads hurtigere med AI. Vores AI Center giver dig en AI Creative Strategist til hooks og koncepter samt AI Voiceovers til hurtige variationer, så du kan teste mere og vinde hurtigere.",
+    "feature5Link": "Læs mere om AI",
+    "feature6Title": "Få adgang til vores b-roll bank",
+    "feature6Link": "Se mere om vores b-roll bank her"
+  },
+  "ugcTypes": {
+    "tiktokAds": "TikTok ads",
+    "lifereal": "Lifereal",
+    "voiceOver": "Voice Over",
+    "hooks": "Hooks",
+    "readyToUse": "Ready-to-use",
+    "rawMaterial": "Rå materiale",
+    "testimonials": "Testimonials",
+    "metaAds": "Meta ads"
+  },
+  "process": {
+    "badge": "ugc kampagner gjort nemt",
+    "headline": "Vi har gjort processen simpel",
+    "step1Title": "Opret din kampagne",
+    "step1Desc": "Opret en kampagne på få minutter",
+    "step2Title": "Opret et AI brief",
+    "step2Desc": "Brug vores AI til at lave performende briefs",
+    "step3Title": "Creators kommer til dig",
+    "step3Desc": "Afvent at creators kommer til dig"
+  },
+  "creators": {
+    "badge": "DANMARK - SVERIGE - NORGE",
+    "headline": "+2500 vaskeægte Skandinaviske creators",
+    "health": "Sundhed & Velvære",
+    "fashion": "Tøj & Mode",
+    "beauty": "Skønhed & Pleje",
+    "food": "Mad & Drikke",
+    "tech": "Teknologi & Gadgets",
+    "home": "Hjem & Livsstil",
+    "pets": "Kæledyr & Dyr",
+    "apps": "Apps & Digitale",
+    "kids": "Børn & Familie",
+    "exploreBtn": "Udforsk vores creators"
+  },
+  "pricing": {
+    "badge": "Vores planer",
+    "soloName": "SOLO",
+    "soloPriceLabel": "DKK /m",
+    "soloPrice": "0",
+    "soloCta": "Opret gratis konto",
+    "soloFeature1": "Betal efter forbrug",
+    "soloFeature2": "Maks 1 brand, 2 creator-samarbejder per måned",
+    "soloFeature3": "Garanti",
+    "soloFeature4": "30% markedspladsgebyr",
+    "usedBy": "Brugt af:",
+    "scaleName": "SCALE",
+    "scalePrice": "995",
+    "scalePriceLabel": "DKK/måned",
+    "scaleCta": "Kom godt i gang",
+    "scaleNote": "Nedgrader når som helst",
+    "scaleFor": "For bureauer og større e-handelsvirksomheder",
+    "scaleFeature1": "10 creator-samarbejder per måned",
+    "scaleFeature2": "Multi-user",
+    "scaleFeature3": "Multi-brand",
+    "scaleFeature4": "Prioritets support",
+    "scaleFeature5": "Sharecodes",
+    "scaleFeature6": "AI Creative Strategist",
+    "scaleFeature7": "AI Voice Generator",
+    "scaleFeature8": "Udvidet garanti",
+    "scaleFeature9": "9% markedspladsgebyr"
+  },
+  "cases": {
+    "badge": "Vi samler på succes cases",
+    "headline": "Sammen skaber vi performance",
+    "testimonial": "Vi har oplevet en markant forbedring i vores annonceresultater og har formået at reducere vores CPA på Meta med 30-50%. Dette har været en central målsætning for samarbejdet, og vi er begejstrede for de resultater, vi har opnået!",
+    "testimonialAuthor": "- Mikkel, Marketing Associate",
+    "stat1": "-70%",
+    "stat1Label": "lavere CPI (Cost pr. install)",
+    "stat2": "+50%",
+    "stat2Label": "højere budget til UGC",
+    "case1": "Gogoevents",
+    "case2": "Mollyapp",
+    "case3": "Kommer snart",
+    "readCase": "Læs Gogoevent's fulde case study"
+  },
+  "faq": {
+    "headline": "Ofte stillede spørgsmål",
+    "q1": "Hvordan fungerer platformen?",
+    "a1": "WebContent er en platform, der forbinder brands med creators. Du opretter en kampagne, creators ansøger, og du vælger de bedste. Al kommunikation, betalinger og indholdslevering foregår direkte på platformen.",
+    "q2": "Er det muligt at godkende scripts og indhold før det produceres?",
+    "a2": "Ja, du kan gennemgå og godkende scripts og storyboards, inden creators begynder produktionen. Du har fuld kontrol over indholdet.",
+    "q3": "Hvordan vælger jeg de rigtige creators?",
+    "a3": "Du kan gennemse creator-profiler med eksempler på tidligere arbejde, statistikker og anmeldelser. Vi håndplukker og kvalitetstester alle creators på platformen.",
+    "q4": "Hvad koster det at bruge platformen?",
+    "a4": "SOLO-planen er gratis. Du betaler kun for det indhold, du godkender. SCALE-planen koster 995 DKK/måned med lavere markedspladsgebyr på 9%.",
+    "q5": "Er rettigheder og licenser inkluderet?",
+    "a5": "Ja, alle rettigheder til indholdet overdrages til dig ved godkendelse og betaling. Du kan bruge indholdet til betalte annoncer, organiske opslag og mere.",
+    "q6": "Kan jeg bruge platformen til flere brands eller kunder?",
+    "a6": "SCALE-planen understøtter multi-brand og multi-user, perfekt til bureauer. SOLO-planen er begrænset til ét brand.",
+    "q7": "Hvordan betaler jeg creators?",
+    "a7": "Betaling håndteres direkte på platformen. Du betaler kun for godkendt indhold, og creators modtager betalingen automatisk.",
+    "q8": "Er det muligt at få content til paid ads?",
+    "a8": "Ja, alt indhold er optimeret til brug i betalte annoncer på Meta, TikTok og andre platforme.",
+    "q9": "Hvad er opsigelsesperioden?",
+    "a9": "Der er ingen bindingsperiode. Du kan nedgradere eller annullere dit abonnement når som helst."
+  },
+  "footer": {
+    "tagline": "Din kommende alt-i-én UGC-platform.",
+    "links": "Links",
+    "contact": "Kontakt os",
+    "knowledge": "Viden",
+    "cases": "Cases",
+    "blogs": "Blogs",
+    "support": "Supportcenter",
+    "privacy": "Privatlivspolitik",
+    "terms": "Handelsbetingelser",
+    "cookies": "Cookiepolitik",
+    "becomeCreator": "Bliv creator",
+    "address": "Hovedvagtsstræde 2C, 3000 Helsingør, Danmark",
+    "vat": "VAT: DK45178927",
+    "copyright": "© 2025 WebContent ApS. All Rights Reserved."
+  },
+  "pages": {
+    "about": {
+      "title": "Om WebContent",
+      "headline": "Vi er WebContent",
+      "description": "WebContent er en skandinavisk UGC-platform, der forbinder brands med de bedste creators. Vi grundlagde virksomheden i 2024 med en vision om at gøre UGC-produktion enkel, effektiv og resultatdrevet.",
+      "mission": "Vores mission",
+      "missionText": "At give ambitiøse DTC-brands adgang til autentisk, performende indhold fra top-tier skandinaviske creators – hurtigt og uden besvær.",
+      "teamHeadline": "Holdet bag WebContent",
+      "address": "Hovedvagtsstræde 2C, 3000 Helsingør, Danmark",
+      "vatLabel": "CVR:",
+      "vat": "DK45178927",
+      "founded": "Stiftet: 2024"
+    },
+    "contact": {
+      "title": "Kontakt & Support",
+      "headline": "Kontakt os",
+      "description": "Har du spørgsmål? Vi er klar til at hjælpe. Skriv til os eller book et møde.",
+      "email": "info@webcontent.dk",
+      "phone": "+45 20 67 31 60",
+      "emailLabel": "Email",
+      "phoneLabel": "Telefon",
+      "ctaBook": "Book et møde",
+      "ctaEmail": "Send en email",
+      "supportHeadline": "Supportcenter",
+      "supportDesc": "Find svar på de mest stillede spørgsmål i vores supportcenter."
+    },
+    "creators": {
+      "title": "Bliv Creator hos WebContent",
+      "headline": "Bliv Creator",
+      "description": "Er du en dygtig indholdsskaber? Bliv en del af vores netværk af over 2.500 skandinaviske creators og tjen penge på at skabe autentisk UGC-indhold.",
+      "benefit1Title": "Fleksibelt arbejde",
+      "benefit1Desc": "Arbejd på dine egne vilkår – vælg de kampagner, der passer til dig.",
+      "benefit2Title": "Fair betaling",
+      "benefit2Desc": "Modtag betaling direkte på platformen efter godkendelse af dit indhold.",
+      "benefit3Title": "Professionel udvikling",
+      "benefit3Desc": "Få feedback og vejledning til at forbedre din kvalitet og tjene mere.",
+      "ctaApply": "Ansøg som Creator",
+      "ctaLearnMore": "Læs mere"
+    },
+    "pricing": {
+      "title": "Priser | WebContent",
+      "headline": "Simpel, gennemsigtig prissætning",
+      "description": "Ingen skjulte gebyrer. Betal kun for det indhold du godkender.",
+      "monthlyLabel": "Per måned",
+      "yearlyLabel": "Årligt (spar 20%)"
+    },
+    "ugcPricing": {
+      "title": "UGC Creator Priser | WebContent",
+      "headline": "UGC Creator priser",
+      "description": "Se priser for UGC-indhold fra vores skandinaviske creators. Transparente priser, ingen overraskelser.",
+      "from": "Fra",
+      "perVideo": "per video",
+      "contentTypes": "Indholdstyper og priser"
+    },
+    "localCreators": {
+      "title": "Lokale Creators | WebContent",
+      "headline": "Lokale Creators til enhver branche",
+      "description": "Vores netværk af over 2.500 skandinaviske creators dækker alle brancher. Find den perfekte creator til dit brand."
+    },
+    "bestCreators": {
+      "title": "De Bedste Creators | WebContent",
+      "headline": "Hvorfor er vores Creators de bedste?",
+      "description": "Vi håndplukker og kvalitetstester alle creators på vores platform. Kun de bedste kommer med."
+    },
+    "ugcTypes": {
+      "title": "UGC Typer | WebContent",
+      "headline": "Vi dækker alle typer UGC indhold",
+      "description": "Fra TikTok ads til Meta ads, testimonials til hooks – vi har alle de UGC-formater, din annonce strategi har brug for."
+    },
+    "aiCenter": {
+      "title": "AI Center | WebContent",
+      "headline": "Mød vores AI Center",
+      "description": "Skab og skaler UGC-ads hurtigere med AI. AI Creative Strategist, AI Voiceovers og mere."
+    },
+    "brollBank": {
+      "title": "B-roll Bank | WebContent",
+      "headline": "Få adgang til vores B-roll Bank",
+      "description": "Et bibliotek af professionelt b-roll materiale, klar til brug i dine UGC-kampagner."
+    },
+    "blog": {
+      "title": "Blog | WebContent",
+      "headline": "WebContent Blog",
+      "description": "Indsigter, strategier og tips til UGC-markedsføring fra eksperterne hos WebContent.",
+      "readMore": "Læs mere",
+      "noPosts": "Ingen indlæg endnu."
+    },
+    "cases": {
+      "title": "Cases | WebContent",
+      "headline": "Success Cases",
+      "description": "Se hvordan ambitiøse brands har opnået ekstraordinære resultater med WebContent.",
+      "readCase": "Læs case study",
+      "noCases": "Ingen cases endnu."
+    },
+    "privacy": {
+      "title": "Privatlivspolitik | WebContent",
+      "headline": "Privatlivspolitik",
+      "lastUpdated": "Sidst opdateret: Januar 2025"
+    },
+    "terms": {
+      "title": "Handelsbetingelser | WebContent",
+      "headline": "Handelsbetingelser",
+      "lastUpdated": "Sidst opdateret: Januar 2025"
+    },
+    "supportCenter": {
+      "title": "Supportcenter | WebContent",
+      "headline": "Hvordan kan vi hjælpe?",
+      "searchPlaceholder": "Søg i hjælpeartikler...",
+      "categories": "Kategorier",
+      "gettingStarted": "Kom godt i gang",
+      "billing": "Fakturering",
+      "creators": "Creators",
+      "campaigns": "Kampagner",
+      "technical": "Teknisk"
+    }
+  },
+  "common": {
+    "learnMore": "Læs mere",
+    "getStarted": "Kom i gang",
+    "contactUs": "Kontakt os",
+    "bookDemo": "Book demo",
+    "viewAll": "Se alle",
+    "back": "Tilbage"
+  }
+}

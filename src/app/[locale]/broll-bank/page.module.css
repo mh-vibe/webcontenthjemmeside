@@ -1,0 +1,11 @@
+.section { padding: 80px 0; }
+.inner { display: flex; flex-direction: column; align-items: center; gap: 48px; }
+.visual { width: 100%; border-radius: 16px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); }
+.features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 800px; width: 100%; }
+.featureCard { display: flex; gap: 16px; align-items: flex-start; }
+.icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+.featureTitle { font-size: 17px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 4px; }
+.featureDesc { font-size: 14px; color: var(--color-text-secondary); line-height: 1.5; }
+.cta { display: inline-flex; align-items: center; padding: 14px 28px; background: var(--color-primary); color: white; font-size: 15px; font-weight: 600; border-radius: var(--radius-sm); transition: background 0.15s; }
+.cta:hover { background: var(--color-primary-hover); }
+@media (max-width: 600px) { .features { grid-template-columns: 1fr; } }

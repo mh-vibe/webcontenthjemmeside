@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "resources": "Resources",
+    "about": "About",
+    "becomeCreator": "Become a Creator",
+    "login": "Login",
+    "startFree": "Start for free",
+    "blog": "Blog",
+    "cases": "Cases",
+    "support": "Support",
+    "ugcPricing": "UGC Creator pricing",
+    "localCreators": "Local Creators",
+    "bestCreators": "Best Creators",
+    "ugcTypes": "UGC Types",
+    "aiCenter": "AI Center",
+    "brollBank": "B-roll Bank"
+  },
+  "hero": {
+    "badge": "For brands",
+    "headline": "Scale your performance with data-driven creatives",
+    "subheadline": "We drive measurable growth for ambitious DTC brands through top-tier creators from across Scandinavia",
+    "cta1": "Boost your performance now",
+    "cta2": "Get a free review",
+    "stat1": "+2,500 creators",
+    "stat2": "Rated 4.6/5 on Trustpilot",
+    "stat3": "9.1/10 satisfaction across 200+ campaigns"
+  },
+  "scaleSection": {
+    "headline": "Scale your UGC-ads easy with WebContent",
+    "subheadline": "Create a campaign brief in minutes. Pay only for approved content.",
+    "cta1": "Create First Campaign",
+    "cta2": "Book Demo with Seb",
+    "feature1Title": "More clicks, more sales – no guessing",
+    "feature1Sub": "Launch ads that convert",
+    "feature2Title": "Content people trust",
+    "feature2Desc": "Build trust with content from real people that feels natural and connects with your audience.",
+    "feature3Title": "Based on real data",
+    "feature3Desc": "All our data is based on insights from over 10,000 video ads from Scandinavian e-commerce stores.",
+    "feature4Title": "Seamless production",
+    "feature4Desc": "No wasted time or long timelines. Just authentic creator ads, delivered quickly and ready to use.",
+    "expertsIn": "Experts in:"
+  },
+  "whySection": {
+    "badge": "The best choice for ads that perform",
+    "headline": "Why smart brands choose WebContent",
+    "feature1Title": "UGC videos from 70 €",
+    "feature1Desc": "Get UGC videos starting from just 70 € – without middlemen, chats, or complicated communication. Our network of creators is ready to deliver content quickly and easily.",
+    "feature1Link": "UGC Creator pricing",
+    "feature2Title": "Local Creators for Every Industry",
+    "feature2Link": "View more Creators",
+    "feature3Title": "We connect you with the best Creators",
+    "feature3Desc": "We handpick only the best creators, so you don't have to search yourself. Everyone on the platform is quality-tested – and we continuously help them improve.",
+    "feature3Sub": "All without chats or time-consuming communication.",
+    "feature3Link": "Why are our Creators the best?",
+    "feature4Title": "We cover all types of UGC content",
+    "feature4Link": "See all types of UGC",
+    "feature5Title": "Meet our AI Center",
+    "feature5Desc": "Create and scale UGC ads faster with AI. Our AI Center gives you an AI Creative Strategist for hooks and concepts, plus AI Voiceovers for quick variations, so you can test more and win faster.",
+    "feature5Link": "Learn more about AI",
+    "feature6Title": "Get access to our B-roll bank",
+    "feature6Link": "See more about our B-roll bank here"
+  },
+  "ugcTypes": {
+    "tiktokAds": "TikTok ads",
+    "lifereal": "Lifereal",
+    "voiceOver": "Voice Over",
+    "hooks": "Hooks",
+    "readyToUse": "Ready-to-use",
+    "rawMaterial": "Raw content",
+    "testimonials": "Testimonials",
+    "metaAds": "Meta ads"
+  },
+  "process": {
+    "badge": "UGC campaigns made easy",
+    "headline": "We've made the process simple",
+    "step1Title": "Create your campaign",
+    "step1Desc": "Create a campaign in minutes",
+    "step2Title": "Create an AI brief",
+    "step2Desc": "Use our AI to create high-performing briefs",
+    "step3Title": "Creators come to you",
+    "step3Desc": "Wait for creators to come to you"
+  },
+  "creators": {
+    "badge": "CREATORS FROM ALL AROUND EUROPE",
+    "headline": "2,500+ genuine local creators",
+    "health": "Health & Wellness",
+    "fashion": "Clothing & Fashion",
+    "beauty": "Beauty & Care",
+    "food": "Food & Beverage",
+    "tech": "Technology & Gadgets",
+    "home": "Home & Lifestyle",
+    "pets": "Pets & Animals",
+    "apps": "Apps & Digital",
+    "kids": "Kids & Family",
+    "exploreBtn": "Explore our creators"
+  },
+  "pricing": {
+    "badge": "Compare our plans",
+    "soloName": "SOLO",
+    "soloPriceLabel": "€ /m",
+    "soloPrice": "0",
+    "soloCta": "Create free account",
+    "soloFeature1": "Pay as you go",
+    "soloFeature2": "Max 1 brand, 2 creator collabs per month",
+    "soloFeature3": "Guarantee",
+    "soloFeature4": "30% Marketplace fee",
+    "usedBy": "Used by:",
+    "scaleName": "SCALE",
+    "scalePrice": "149",
+    "scalePriceLabel": "€/month",
+    "scaleCta": "Get started",
+    "scaleNote": "Downgrade anytime",
+    "scaleFor": "For Agencies and larger eCommerces",
+    "scaleFeature1": "10 Creator collabs per month",
+    "scaleFeature2": "Multi-user",
+    "scaleFeature3": "Multi-brand",
+    "scaleFeature4": "Priority support",
+    "scaleFeature5": "Sharecodes",
+    "scaleFeature6": "AI Creative Strategist",
+    "scaleFeature7": "AI Voice Generator",
+    "scaleFeature8": "Extended guarantee",
+    "scaleFeature9": "9% Marketplace fee"
+  },
+  "cases": {
+    "badge": "We collect success stories",
+    "headline": "Together we create performance",
+    "testimonial": "We have experienced a significant improvement in our ad results and have managed to reduce our CPA on Meta by 30-50%. This has been a key objective for the collaboration, and we are thrilled with the results we have achieved!",
+    "testimonialAuthor": "- Mikkel, Marketing Associate",
+    "stat1": "-70%",
+    "stat1Label": "lower CPI (Cost per install)",
+    "stat2": "+50%",
+    "stat2Label": "higher budget for UGC",
+    "case1": "Gogoevents",
+    "case2": "Mollyapp",
+    "case3": "Coming soon",
+    "readCase": "Read Gogoevent's full case study"
+  },
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "q1": "How does the platform work?",
+    "a1": "WebContent is a platform that connects brands with creators. You create a campaign, creators apply, and you choose the best ones. All communication, payments, and content delivery happen directly on the platform.",
+    "q2": "Is it possible to approve scripts and content before it's produced?",
+    "a2": "Yes, you can review and approve scripts and storyboards before creators begin production. You have full control over the content.",
+    "q3": "How do I choose the right creators?",
+    "a3": "You can browse creator profiles with samples of previous work, statistics, and reviews. We handpick and quality-test all creators on the platform.",
+    "q4": "What does it cost to use the platform?",
+    "a4": "The SOLO plan is free. You only pay for the content you approve. The SCALE plan costs €149/month with a lower marketplace fee of 9%.",
+    "q5": "Are rights and licenses included?",
+    "a5": "Yes, all rights to the content are transferred to you upon approval and payment. You can use the content for paid ads, organic posts, and more.",
+    "q6": "Can I use the platform for multiple brands?",
+    "a6": "The SCALE plan supports multi-brand and multi-user, perfect for agencies. The SOLO plan is limited to one brand.",
+    "q7": "How do I pay creators?",
+    "a7": "Payment is handled directly on the platform. You only pay for approved content, and creators receive payment automatically.",
+    "q8": "Is it possible to get content for paid ads?",
+    "a8": "Yes, all content is optimized for use in paid ads on Meta, TikTok, and other platforms.",
+    "q9": "What is the cancellation period?",
+    "a9": "There is no lock-in period. You can downgrade or cancel your subscription at any time."
+  },
+  "footer": {
+    "tagline": "Your next all-in-one UGC platform.",
+    "links": "Links",
+    "contact": "Contact us",
+    "knowledge": "Knowledge",
+    "cases": "Cases",
+    "blogs": "Blogs",
+    "support": "Supportcenter",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "cookies": "Cookie Policy",
+    "becomeCreator": "Become a creator",
+    "address": "Hovedvagtsstræde 2C, 3000 Helsingør, Denmark",
+    "vat": "VAT: DK45178927",
+    "copyright": "© 2025 WebContent ApS. All Rights Reserved."
+  },
+  "pages": {
+    "about": {
+      "title": "About WebContent",
+      "headline": "We are WebContent",
+      "description": "WebContent is a Scandinavian UGC platform connecting brands with the best creators. We founded the company in 2024 with a vision to make UGC production simple, efficient, and results-driven.",
+      "mission": "Our mission",
+      "missionText": "To give ambitious DTC brands access to authentic, high-performing content from top-tier Scandinavian creators – quickly and without hassle.",
+      "teamHeadline": "The team behind WebContent",
+      "address": "Hovedvagtsstræde 2C, 3000 Helsingør, Denmark",
+      "vatLabel": "VAT:",
+      "vat": "DK45178927",
+      "founded": "Founded: 2024"
+    },
+    "contact": {
+      "title": "Contact & Support",
+      "headline": "Contact us",
+      "description": "Have questions? We're ready to help. Write to us or book a meeting.",
+      "email": "info@webcontent.dk",
+      "phone": "+45 20 67 31 60",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "ctaBook": "Book a meeting",
+      "ctaEmail": "Send an email",
+      "supportHeadline": "Support Center",
+      "supportDesc": "Find answers to the most common questions in our support center."
+    },
+    "creators": {
+      "title": "Become a Creator at WebContent",
+      "headline": "Become a Creator",
+      "description": "Are you a skilled content creator? Join our network of 2,500+ Scandinavian creators and earn money creating authentic UGC content.",
+      "benefit1Title": "Flexible work",
+      "benefit1Desc": "Work on your own terms – choose the campaigns that suit you.",
+      "benefit2Title": "Fair payment",
+      "benefit2Desc": "Receive payment directly on the platform after your content is approved.",
+      "benefit3Title": "Professional development",
+      "benefit3Desc": "Get feedback and guidance to improve your quality and earn more.",
+      "ctaApply": "Apply as Creator",
+      "ctaLearnMore": "Learn more"
+    },
+    "pricing": {
+      "title": "Pricing | WebContent",
+      "headline": "Simple, transparent pricing",
+      "description": "No hidden fees. Only pay for content you approve.",
+      "monthlyLabel": "Per month",
+      "yearlyLabel": "Yearly (save 20%)"
+    },
+    "ugcPricing": {
+      "title": "UGC Creator Pricing | WebContent",
+      "headline": "UGC Creator pricing",
+      "description": "See pricing for UGC content from our Scandinavian creators. Transparent pricing, no surprises.",
+      "from": "From",
+      "perVideo": "per video",
+      "contentTypes": "Content types and pricing"
+    },
+    "localCreators": {
+      "title": "Local Creators | WebContent",
+      "headline": "Local Creators for Every Industry",
+      "description": "Our network of 2,500+ Scandinavian creators covers all industries. Find the perfect creator for your brand."
+    },
+    "bestCreators": {
+      "title": "Best Creators | WebContent",
+      "headline": "Why are our Creators the best?",
+      "description": "We handpick and quality-test all creators on our platform. Only the best make it."
+    },
+    "ugcTypes": {
+      "title": "UGC Types | WebContent",
+      "headline": "We cover all types of UGC content",
+      "description": "From TikTok ads to Meta ads, testimonials to hooks – we have all the UGC formats your ad strategy needs."
+    },
+    "aiCenter": {
+      "title": "AI Center | WebContent",
+      "headline": "Meet our AI Center",
+      "description": "Create and scale UGC ads faster with AI. AI Creative Strategist, AI Voiceovers, and more."
+    },
+    "brollBank": {
+      "title": "B-roll Bank | WebContent",
+      "headline": "Get access to our B-roll Bank",
+      "description": "A library of professional b-roll material, ready to use in your UGC campaigns."
+    },
+    "blog": {
+      "title": "Blog | WebContent",
+      "headline": "WebContent Blog",
+      "description": "Insights, strategies, and tips for UGC marketing from the experts at WebContent.",
+      "readMore": "Read more",
+      "noPosts": "No posts yet."
+    },
+    "cases": {
+      "title": "Cases | WebContent",
+      "headline": "Success Cases",
+      "description": "See how ambitious brands have achieved extraordinary results with WebContent.",
+      "readCase": "Read case study",
+      "noCases": "No cases yet."
+    },
+    "privacy": {
+      "title": "Privacy Policy | WebContent",
+      "headline": "Privacy Policy",
+      "lastUpdated": "Last updated: January 2025"
+    },
+    "terms": {
+      "title": "Terms of Service | WebContent",
+      "headline": "Terms of Service",
+      "lastUpdated": "Last updated: January 2025"
+    },
+    "supportCenter": {
+      "title": "Support Center | WebContent",
+      "headline": "How can we help?",
+      "searchPlaceholder": "Search help articles...",
+      "categories": "Categories",
+      "gettingStarted": "Getting started",
+      "billing": "Billing",
+      "creators": "Creators",
+      "campaigns": "Campaigns",
+      "technical": "Technical"
+    }
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "contactUs": "Contact us",
+    "bookDemo": "Book demo",
+    "viewAll": "View all",
+    "back": "Back"
+  }
+}

@@ -1,0 +1,16 @@
+.section { padding: 80px 0; }
+.inner { display: flex; flex-direction: column; gap: 48px; max-width: 720px; }
+.contactGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.contactCard { background: var(--color-bg-subtle); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 28px; display: flex; flex-direction: column; gap: 8px; }
+.contactIcon { font-size: 28px; }
+.contactLabel { font-size: 14px; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.contactValue { font-size: 16px; font-weight: 600; color: var(--color-primary); }
+.ctaRow { display: flex; gap: 12px; flex-wrap: wrap; }
+.primaryCta { display: inline-flex; align-items: center; padding: 12px 24px; background: var(--color-primary); color: white; font-size: 15px; font-weight: 600; border-radius: var(--radius-sm); transition: background 0.15s; }
+.primaryCta:hover { background: var(--color-primary-hover); }
+.secondaryCta { display: inline-flex; align-items: center; padding: 12px 24px; background: white; color: var(--color-text-primary); font-size: 15px; font-weight: 600; border: 1px solid var(--color-border); border-radius: var(--radius-sm); transition: border-color 0.15s; }
+.secondaryCta:hover { border-color: var(--color-text-muted); }
+.supportSection { border-top: 1px solid var(--color-border); padding-top: 48px; display: flex; flex-direction: column; gap: 16px; }
+.supportTitle { font-size: 24px; font-weight: 700; color: var(--color-text-primary); }
+.supportDesc { font-size: 16px; color: var(--color-text-secondary); line-height: 1.6; }
+@media (max-width: 600px) { .contactGrid { grid-template-columns: 1fr; } }

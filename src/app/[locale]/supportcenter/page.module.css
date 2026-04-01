@@ -1,0 +1,16 @@
+.section { padding: 80px 0; }
+.inner { display: flex; flex-direction: column; gap: 64px; }
+.categories { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.categoryCard { background: var(--color-bg-subtle); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+.catIcon { font-size: 28px; }
+.catTitle { font-size: 18px; font-weight: 700; color: var(--color-text-primary); }
+.catItems { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.catItem { font-size: 14px; color: var(--color-text-secondary); padding-left: 16px; position: relative; cursor: pointer; }
+.catItem::before { content: '→'; position: absolute; left: 0; color: var(--color-primary); font-size: 12px; top: 1px; }
+.catItem:hover { color: var(--color-primary); }
+.contactBlock { display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center; padding: 48px; background: var(--color-bg-accent); border-radius: var(--radius-xl); }
+.contactTitle { font-size: 26px; font-weight: 700; color: var(--color-text-primary); }
+.contactCta { display: inline-flex; align-items: center; padding: 14px 28px; background: var(--color-primary); color: white; font-size: 15px; font-weight: 600; border-radius: var(--radius-sm); transition: background 0.15s; }
+.contactCta:hover { background: var(--color-primary-hover); }
+@media (max-width: 900px) { .categories { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .categories { grid-template-columns: 1fr; } }
