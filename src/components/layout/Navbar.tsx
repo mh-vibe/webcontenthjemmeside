@@ -3,8 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useTranslations, useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
 
 const LOCALES = [
@@ -14,46 +14,44 @@ const LOCALES = [
   { code: 'no', label: 'NO', flag: '🇳🇴' },
 ];
 
-type NavbarProps = {
-  locale: string;
-};
+const ChevronDown = () => (
+  <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+    <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+
+type NavbarProps = { locale: string };
 
 export default function Navbar({ locale }: NavbarProps) {
   const t = useTranslations('nav');
   const pathname = usePathname();
-  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [featuresOpen, setFeaturesOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
+  const featuresRef = useRef<HTMLDivElement>(null);
   const resourcesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) {
-        setLangOpen(false);
-      }
-      if (resourcesRef.current && !resourcesRef.current.contains(e.target as Node)) {
-        setResourcesOpen(false);
-      }
+    const onClick = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) setLangOpen(false);
+      if (featuresRef.current && !featuresRef.current.contains(e.target as Node)) setFeaturesOpen(false);
+      if (resourcesRef.current && !resourcesRef.current.contains(e.target as Node)) setResourcesOpen(false);
     };
-    document.addEventListener('click', handleClick);
-    return () => document.removeEventListener('click', handleClick);
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
   }, []);
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
 
@@ -64,13 +62,19 @@ export default function Navbar({ locale }: NavbarProps) {
     return newPrefix + path || '/';
   };
 
-  const localePath = (path: string) => {
-    return locale === 'da' ? path : `/${locale}${path}`;
-  };
-
+  const localePath = (path: string) => locale === 'da' ? path : `/${locale}${path}`;
   const currentLang = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
 
-  const resources = [
+  const featureLinks = [
+    { label: t('ugcPricing'), href: localePath('/ugc-pricing') },
+    { label: t('localCreators'), href: localePath('/locale-creators') },
+    { label: t('bestCreators'), href: localePath('/best-creators') },
+    { label: t('ugcTypes'), href: localePath('/ugc-types') },
+    { label: t('aiCenter'), href: localePath('/ai-center') },
+    { label: t('brollBank'), href: localePath('/broll-bank') },
+  ];
+
+  const resourceLinks = [
     { label: t('blog'), href: localePath('/blog') },
     { label: t('cases'), href: localePath('/cases') },
     { label: t('support'), href: localePath('/supportcenter') },
@@ -80,54 +84,65 @@ export default function Navbar({ locale }: NavbarProps) {
     <>
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
         <div className={`container ${styles.nav}`}>
-          {/* Logo */}
           <Link href={localePath('/')} className={styles.logo}>
             <Image
               src="https://framerusercontent.com/images/bnZyGSfKgvTIvmXu3YRSONXkPiE.png"
               alt="WebContent"
-              width={130}
+              width={40}
               height={40}
+              style={{ objectFit: 'contain' }}
               priority
             />
           </Link>
 
-          {/* Desktop nav links */}
           <nav className={styles.links}>
-            <div className={styles.dropdown} ref={resourcesRef}>
-              <button
-                className={styles.navLink}
-                onClick={() => setResourcesOpen(!resourcesOpen)}
-              >
-                {t('resources')}
-                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" style={{ marginLeft: 4 }}>
-                  <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
+            <div className={styles.dropdown} ref={featuresRef}>
+              <button className={styles.navLink} onClick={() => setFeaturesOpen(!featuresOpen)}>
+                {t('features')} <ChevronDown />
               </button>
-              {resourcesOpen && (
+              {featuresOpen && (
                 <div className={styles.dropdownMenu}>
-                  {resources.map((r) => (
-                    <Link key={r.href} href={r.href} className={styles.dropdownItem} onClick={() => setResourcesOpen(false)}>
-                      {r.label}
+                  {featureLinks.map((l) => (
+                    <Link key={l.href} href={l.href} className={styles.dropdownItem} onClick={() => setFeaturesOpen(false)}>
+                      {l.label}
                     </Link>
                   ))}
                 </div>
               )}
             </div>
+
             <Link href={localePath('/pricing')} className={styles.navLink}>{t('pricing')}</Link>
+
+            <div className={styles.dropdown} ref={resourcesRef}>
+              <button className={styles.navLink} onClick={() => setResourcesOpen(!resourcesOpen)}>
+                {t('resources')} <ChevronDown />
+              </button>
+              {resourcesOpen && (
+                <div className={styles.dropdownMenu}>
+                  {resourceLinks.map((l) => (
+                    <Link key={l.href} href={l.href} className={styles.dropdownItem} onClick={() => setResourcesOpen(false)}>
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <Link href={localePath('/about')} className={styles.navLink}>{t('about')}</Link>
-            <Link href={localePath('/creators')} className={styles.navLink}>{t('becomeCreator')}</Link>
+            <Link href={localePath('/creators')} className={styles.navLinkCoral}>{t('becomeCreator')}</Link>
           </nav>
 
-          {/* Right side */}
           <div className={styles.right}>
-            {/* Language switcher */}
+            <a href="https://app.webcontent.dk/login" className={styles.loginBtn}>{t('login')}</a>
+            <a href="https://app.webcontent.dk/signup" className={styles.ctaBtn}>
+              {t('startFree')} →
+            </a>
+
             <div className={styles.langSwitcher} ref={langRef}>
               <button className={styles.langBtn} onClick={() => setLangOpen(!langOpen)}>
                 <span>{currentLang.flag}</span>
                 <span>{currentLang.label}</span>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                  <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
+                <ChevronDown />
               </button>
               {langOpen && (
                 <div className={styles.langMenu}>
@@ -146,15 +161,7 @@ export default function Navbar({ locale }: NavbarProps) {
               )}
             </div>
 
-            <a href="https://app.webcontent.dk/login" className={styles.loginBtn}>{t('login')}</a>
-            <a href="https://app.webcontent.dk/signup" className={styles.ctaBtn}>{t('startFree')}</a>
-
-            {/* Hamburger */}
-            <button
-              className={styles.hamburger}
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Toggle menu"
-            >
+            <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
               <span className={`${styles.bar} ${menuOpen ? styles.barOpen1 : ''}`} />
               <span className={`${styles.bar} ${menuOpen ? styles.barOpen2 : ''}`} />
               <span className={`${styles.bar} ${menuOpen ? styles.barOpen3 : ''}`} />
@@ -163,24 +170,15 @@ export default function Navbar({ locale }: NavbarProps) {
         </div>
       </header>
 
-      {/* Mobile drawer */}
-      {menuOpen && (
-        <div className={styles.overlay} onClick={() => setMenuOpen(false)} />
-      )}
+      {menuOpen && <div className={styles.overlay} onClick={() => setMenuOpen(false)} />}
       <div className={`${styles.drawer} ${menuOpen ? styles.drawerOpen : ''}`}>
         <div className={styles.drawerHeader}>
           <Link href={localePath('/')} onClick={() => setMenuOpen(false)}>
-            <Image
-              src="https://framerusercontent.com/images/bnZyGSfKgvTIvmXu3YRSONXkPiE.png"
-              alt="WebContent"
-              width={120}
-              height={36}
-            />
+            <Image src="https://framerusercontent.com/images/bnZyGSfKgvTIvmXu3YRSONXkPiE.png" alt="WebContent" width={40} height={40} />
           </Link>
           <button className={styles.closeBtn} onClick={() => setMenuOpen(false)}>✕</button>
         </div>
         <nav className={styles.drawerNav}>
-          <Link href={localePath('/')} className={styles.drawerLink} onClick={() => setMenuOpen(false)}>Home</Link>
           <Link href={localePath('/pricing')} className={styles.drawerLink} onClick={() => setMenuOpen(false)}>{t('pricing')}</Link>
           <Link href={localePath('/about')} className={styles.drawerLink} onClick={() => setMenuOpen(false)}>{t('about')}</Link>
           <Link href={localePath('/creators')} className={styles.drawerLink} onClick={() => setMenuOpen(false)}>{t('becomeCreator')}</Link>
@@ -190,19 +188,14 @@ export default function Navbar({ locale }: NavbarProps) {
         </nav>
         <div className={styles.drawerLangs}>
           {LOCALES.map((l) => (
-            <Link
-              key={l.code}
-              href={getLocalePath(l.code)}
-              className={`${styles.drawerLang} ${l.code === locale ? styles.drawerLangActive : ''}`}
-              onClick={() => setMenuOpen(false)}
-            >
+            <Link key={l.code} href={getLocalePath(l.code)} className={`${styles.drawerLang} ${l.code === locale ? styles.drawerLangActive : ''}`} onClick={() => setMenuOpen(false)}>
               {l.flag} {l.label}
             </Link>
           ))}
         </div>
         <div className={styles.drawerCtas}>
-          <a href="https://app.webcontent.dk/login" className={styles.loginBtn}>{t('login')}</a>
-          <a href="https://app.webcontent.dk/signup" className={styles.ctaBtn}>{t('startFree')}</a>
+          <a href="https://app.webcontent.dk/login" className={styles.drawerLoginBtn}>{t('login')}</a>
+          <a href="https://app.webcontent.dk/signup" className={styles.ctaBtn}>{t('startFree')} →</a>
         </div>
       </div>
     </>

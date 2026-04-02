@@ -9,62 +9,51 @@ export default function HeroSection({ locale }: Props) {
 
   return (
     <section className={styles.hero}>
-      <div className={styles.bg} />
       <div className={`container ${styles.inner}`}>
-        <div className={styles.content}>
-          <div className={styles.badge}>
-            <span className={styles.badgeDot} />
-            {t('badge')}
-          </div>
+        <h1 className={styles.headline}>{t('headline')}</h1>
 
-          <h1 className={styles.headline}>
-            {t('headline')}
-          </h1>
+        <p className={styles.subheadline}>{t('subheadline')}</p>
 
-          <p className={styles.subheadline}>
-            {t('subheadline')}
-          </p>
-
-          <div className={styles.ctas}>
-            <a href="https://app.webcontent.dk/signup" className={styles.primaryCta}>
-              {t('cta1')}
-            </a>
-          </div>
-
-          <div className={styles.stats}>
-            <div className={styles.stat}>
-              <span className={styles.statIcon}>⭐</span>
-              <span className={styles.statText}>{t('stat1')}</span>
-            </div>
-            <div className={styles.statDivider} />
-            <div className={styles.stat}>
-              <Image
-                src="https://framerusercontent.com/images/TWAnC7GX1Wmv3D2Kah1ir7RfxWA.png"
-                alt="Trustpilot"
-                width={80}
-                height={20}
-                style={{ objectFit: 'contain' }}
-              />
-              <span className={styles.statText}>{t('stat2')}</span>
-            </div>
-            <div className={styles.statDivider} />
-            <div className={styles.stat}>
-              <span className={styles.statText}>{t('stat3')}</span>
-            </div>
-          </div>
+        <div className={styles.ctas}>
+          <a href="https://app.webcontent.dk/signup" className={styles.primaryCta}>
+            {t('cta1')}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+          </a>
+          <a href="https://calendly.com/webcontent" className={styles.secondaryCta}>
+            <Image
+              src="https://framerusercontent.com/images/39TxLXlTK7Jh6cfXqcAkgGrlUw.png"
+              alt=""
+              width={28}
+              height={28}
+              className={styles.ctaAvatar}
+            />
+            {t('cta2')}
+          </a>
         </div>
 
-        <div className={styles.visual}>
-          <div className={styles.mockupGlow} />
-          <Image
-            src="https://framerusercontent.com/images/PsnafjgqXUjz4UlQBa0be8waY.png"
-            alt="WebContent Platform"
-            width={620}
-            height={440}
-            className={styles.appMockup}
-            style={{ objectFit: 'contain' }}
-            priority
-          />
+        <div className={styles.stats}>
+          <div className={styles.stat}>
+            <svg className={styles.check} width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l3.5 3.5L13 4.5" stroke="#f3584a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span>{t('stat1')}</span>
+          </div>
+          <div className={styles.stat}>
+            <svg className={styles.check} width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l3.5 3.5L13 4.5" stroke="#f3584a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span>{t('stat2')}</span>
+          </div>
+          <div className={styles.stat}>
+            <svg className={styles.check} width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l3.5 3.5L13 4.5" stroke="#f3584a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span>{t('stat3')}</span>
+          </div>
         </div>
       </div>
     </section>

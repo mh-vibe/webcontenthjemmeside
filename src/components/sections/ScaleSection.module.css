@@ -1,94 +1,107 @@
 .section {
+  background: #f2f4f7;
   padding: 80px 0;
-  background: #f9fafb;
 }
 
 .inner {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.header {
-  text-align: center;
-  max-width: 640px;
-  margin-bottom: 48px;
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #98a2b3;
+  margin-bottom: 12px;
+  align-self: center;
 }
 
 .headline {
   font-size: clamp(28px, 3.5vw, 40px);
   font-weight: 800;
-  color: var(--color-text-primary);
+  color: #101828;
   letter-spacing: -0.02em;
-  line-height: 1.2;
+  margin-bottom: 48px;
+  line-height: 1.15;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 20px;
   width: 100%;
+  margin-bottom: 48px;
 }
 
 .card {
   background: white;
   border: 1px solid #e4e7ec;
-  border-radius: 12px;
-  padding: 32px 28px;
+  border-radius: 16px;
+  padding: 40px 32px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.cardIcon {
-  width: 48px;
-  height: 48px;
+.iconBox {
+  width: 56px;
+  height: 56px;
+  background: #f2f4f7;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  flex-shrink: 0;
 }
 
 .cardTitle {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
-  color: var(--color-text-primary);
-  margin-bottom: 10px;
+  color: #101828;
+  margin-bottom: 16px;
   line-height: 1.3;
 }
 
 .cardDesc {
-  font-size: 14px;
-  color: var(--color-text-secondary);
-  line-height: 1.6;
-  flex: 1;
-  margin-bottom: 20px;
+  font-size: 15px;
+  color: #667085;
+  line-height: 1.65;
 }
 
-.platformBadges {
+.experts {
   display: flex;
-  gap: 6px;
-  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
 }
 
-.platformBadge {
-  background: #f3f4f6;
-  color: #374151;
-  font-size: 11px;
+.expertsLabel {
+  font-size: 15px;
   font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 4px;
+  color: #101828;
 }
 
 @media (max-width: 900px) {
   .cards {
     grid-template-columns: 1fr;
     max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .section {
     padding: 56px 0;
+  }
+
+  .headline {
+    font-size: 28px;
   }
 }
