@@ -27,7 +27,7 @@
 }
 
 .card {
-  background: var(--color-bg-subtle);
+  background: white;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: 36px;
@@ -38,25 +38,20 @@
 }
 
 .cardHighlight {
-  background: var(--color-text-primary);
-  border-color: var(--color-text-primary);
-  color: white;
+  border: 2px solid var(--color-primary);
+  position: relative;
 }
 
 .popularBadge {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
   background: var(--color-primary);
   color: white;
   font-size: 11px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 4px 14px;
-  border-radius: var(--radius-full);
-  white-space: nowrap;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  width: fit-content;
 }
 
 .planName {
@@ -67,14 +62,19 @@
   color: var(--color-text-muted);
 }
 
-.cardHighlight .planName {
-  color: rgba(255, 255, 255, 0.6);
+.planNameHighlight {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
 }
 
 .price {
   display: flex;
   align-items: baseline;
   gap: 6px;
+  flex-wrap: wrap;
 }
 
 .priceAmount {
@@ -85,29 +85,34 @@
   letter-spacing: -0.02em;
 }
 
-.cardHighlight .priceAmount {
-  color: white;
-}
-
 .priceLabel {
   font-size: 14px;
   color: var(--color-text-muted);
   font-weight: 500;
 }
 
-.cardHighlight .priceLabel {
-  color: rgba(255, 255, 255, 0.6);
+.priceOld {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.priceSub {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: -12px;
 }
 
 .scaleNote {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-muted);
   margin-top: -12px;
 }
 
 .scaleFor {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-secondary);
   font-weight: 500;
   margin-top: -8px;
 }
@@ -128,10 +133,6 @@
   color: var(--color-text-secondary);
 }
 
-.cardHighlight .feature {
-  color: rgba(255, 255, 255, 0.85);
-}
-
 .checkIcon {
   width: 18px;
   height: 18px;
@@ -150,7 +151,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: rgba(243, 88, 74, 0.2);
+  background: var(--color-primary-light);
   color: var(--color-primary);
   display: flex;
   align-items: center;

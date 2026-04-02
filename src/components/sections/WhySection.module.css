@@ -33,15 +33,16 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 16px;
   width: 100%;
 }
 
 .card {
   background: white;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
   padding: 28px;
   display: flex;
   flex-direction: column;
@@ -55,22 +56,60 @@
   transform: translateY(-2px);
 }
 
-.cardWide {
-  grid-column: span 2;
+/* Card 1 - dark, col 1, row 1 */
+.cardDark {
+  grid-column: 1;
+  grid-row: 1;
+  background: #101828;
+  color: white;
 }
 
+.cardDark .cardTitle {
+  color: white;
+}
+
+.cardDark .cardDesc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Card 2 - tall, col 2, rows 1-2 */
 .cardTall {
-  grid-row: span 2;
+  grid-column: 2;
+  grid-row: 1 / 3;
 }
 
-.cardNormal {
-  grid-column: span 1;
+/* Card 3 - col 1, row 2 */
+.cardNormal3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* Card 4 - wide, col 1-2, row 3 */
+.cardWide4 {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Card 5 - col 1, row 4 */
+.card5 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+/* Card 6 - col 2, row 4 */
+.card6 {
+  grid-column: 2;
+  grid-row: 4;
 }
 
 .cardContent {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .cardTitle {
@@ -106,6 +145,20 @@
   opacity: 0.8;
 }
 
+.cardLinkDark {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cardLinkDark:hover {
+  opacity: 0.6;
+}
+
 /* Price display */
 .cardVisualPrice {
   display: flex;
@@ -120,20 +173,20 @@
 
 .priceFrom {
   font-size: 14px;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .priceAmount {
   font-size: 64px;
   font-weight: 800;
-  color: var(--color-primary);
+  color: white;
   line-height: 1;
 }
 
 .priceCurrency {
   font-size: 20px;
   font-weight: 600;
-  color: var(--color-text-secondary);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Creator grid */
@@ -143,6 +196,7 @@
   gap: 6px;
   border-radius: var(--radius-md);
   overflow: hidden;
+  flex: 1;
 }
 
 .creatorThumb {
@@ -167,6 +221,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  flex: 1;
 }
 
 .tag {
@@ -203,15 +258,12 @@
 
 @media (max-width: 900px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 
-  .cardWide {
-    grid-column: span 2;
-  }
-
-  .cardTall {
-    grid-row: span 1;
+  .cardWide4 {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -224,9 +276,12 @@
     grid-template-columns: 1fr;
   }
 
-  .cardWide {
-    grid-column: span 1;
-  }
+  .cardDark { grid-column: 1; grid-row: auto; }
+  .cardTall { grid-column: 1; grid-row: auto; }
+  .cardNormal3 { grid-column: 1; grid-row: auto; }
+  .cardWide4 { grid-column: 1; grid-row: auto; flex-direction: column; }
+  .card5 { grid-column: 1; grid-row: auto; }
+  .card6 { grid-column: 1; grid-row: auto; }
 
   .creatorGrid {
     grid-template-columns: repeat(2, 1fr);

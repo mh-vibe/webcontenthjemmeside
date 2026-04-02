@@ -40,12 +40,12 @@ export default function WhySection({ locale }: Props) {
         <h2 className={styles.headline}>{t('headline')}</h2>
 
         <div className={styles.grid}>
-          {/* Card 1 - UGC Pricing */}
-          <div className={`${styles.card} ${styles.cardWide}`}>
+          {/* Card 1 - UGC Pricing - dark card col 1, row 1 */}
+          <div className={`${styles.card} ${styles.cardDark}`}>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{t('feature1Title')}</h3>
               <p className={styles.cardDesc}>{t('feature1Desc')}</p>
-              <Link href={localePath('/ugc-pricing')} className={styles.cardLink}>
+              <Link href={localePath('/ugc-pricing')} className={styles.cardLinkDark}>
                 {t('feature1Link')} →
               </Link>
             </div>
@@ -58,7 +58,7 @@ export default function WhySection({ locale }: Props) {
             </div>
           </div>
 
-          {/* Card 2 - Local Creators */}
+          {/* Card 2 - Local Creators - col 2, rows 1-2 TALL */}
           <div className={`${styles.card} ${styles.cardTall}`}>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{t('feature2Title')}</h3>
@@ -75,8 +75,8 @@ export default function WhySection({ locale }: Props) {
             </div>
           </div>
 
-          {/* Card 3 - Best Creators */}
-          <div className={`${styles.card} ${styles.cardNormal}`}>
+          {/* Card 3 - Best Creators - col 1, row 2 */}
+          <div className={`${styles.card} ${styles.cardNormal3}`}>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{t('feature3Title')}</h3>
               <p className={styles.cardDesc}>{t('feature3Desc')}</p>
@@ -87,8 +87,8 @@ export default function WhySection({ locale }: Props) {
             </div>
           </div>
 
-          {/* Card 4 - UGC Types */}
-          <div className={`${styles.card} ${styles.cardNormal}`}>
+          {/* Card 4 - UGC Types - col 1-2, row 3 WIDE */}
+          <div className={`${styles.card} ${styles.cardWide4}`}>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{t('feature4Title')}</h3>
               <Link href={localePath('/ugc-types')} className={styles.cardLink}>
@@ -102,8 +102,8 @@ export default function WhySection({ locale }: Props) {
             </div>
           </div>
 
-          {/* Card 5 - AI Center */}
-          <div className={`${styles.card} ${styles.cardWide}`}>
+          {/* Card 5 - AI Center - col 1, row 4 */}
+          <div className={`${styles.card} ${styles.card5}`}>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{t('feature5Title')}</h3>
               <p className={styles.cardDesc}>{t('feature5Desc')}</p>
@@ -116,8 +116,8 @@ export default function WhySection({ locale }: Props) {
             </div>
           </div>
 
-          {/* Card 6 - B-roll Bank */}
-          <div className={`${styles.card} ${styles.cardNormal}`}>
+          {/* Card 6 - B-roll Bank - col 2, row 4 */}
+          <div className={`${styles.card} ${styles.card6}`}>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{t('feature6Title')}</h3>
               <Link href={localePath('/broll-bank')} className={styles.cardLink}>

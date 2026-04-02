@@ -39,6 +39,7 @@ export default function PricingSection({ locale }: Props) {
               <span className={styles.priceAmount}>{t('soloPrice')}</span>
               <span className={styles.priceLabel}>{t('soloPriceLabel')}</span>
             </div>
+            <p className={styles.priceSub}>Betal pr. video</p>
 
             <ul className={styles.features}>
               {soloFeatures.map((f, i) => (
@@ -70,10 +71,11 @@ export default function PricingSection({ locale }: Props) {
           {/* SCALE */}
           <div className={`${styles.card} ${styles.cardHighlight}`}>
             <div className={styles.popularBadge}>Most popular</div>
-            <div className={styles.planName}>{t('scaleName')}</div>
+            <div className={styles.planNameHighlight}>{t('scaleName')}</div>
             <div className={styles.price}>
               <span className={styles.priceAmount}>{t('scalePrice')}</span>
               <span className={styles.priceLabel}>{t('scalePriceLabel')}</span>
+              <span className={styles.priceOld}>1.495</span>
             </div>
             <p className={styles.scaleNote}>{t('scaleNote')}</p>
             <p className={styles.scaleFor}>{t('scaleFor')}</p>
