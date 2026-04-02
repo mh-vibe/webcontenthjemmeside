@@ -6,9 +6,6 @@ type Props = { locale: string };
 
 export default function HeroSection({ locale }: Props) {
   const t = useTranslations('hero');
-  const nav = useTranslations('nav');
-
-  const localePath = (path: string) => locale === 'da' ? path : `/${locale}${path}`;
 
   return (
     <section className={styles.hero}>
@@ -31,9 +28,6 @@ export default function HeroSection({ locale }: Props) {
           <div className={styles.ctas}>
             <a href="https://app.webcontent.dk/signup" className={styles.primaryCta}>
               {t('cta1')}
-            </a>
-            <a href="https://calendly.com/webcontent" className={styles.secondaryCta}>
-              {t('cta2')}
             </a>
           </div>
 
@@ -61,35 +55,16 @@ export default function HeroSection({ locale }: Props) {
         </div>
 
         <div className={styles.visual}>
-          <div className={styles.phonesWrapper}>
-            <div className={styles.phoneLeft}>
-              <Image
-                src="https://framerusercontent.com/images/ETizEDkRfG0fBrzzk8gn14rdc.png"
-                alt="Creator UGC"
-                width={200}
-                height={360}
-                style={{ objectFit: 'cover', borderRadius: 20 }}
-              />
-            </div>
-            <div className={styles.phoneCenter}>
-              <Image
-                src="https://framerusercontent.com/images/5ABNZSu7aUea84ijpFboyPqA0.png"
-                alt="Creator UGC"
-                width={220}
-                height={395}
-                style={{ objectFit: 'cover', borderRadius: 20 }}
-              />
-            </div>
-            <div className={styles.phoneRight}>
-              <Image
-                src="https://framerusercontent.com/images/G1xbbBEjrQVjTbIDe3775SR0iSs.png"
-                alt="Creator UGC"
-                width={200}
-                height={360}
-                style={{ objectFit: 'cover', borderRadius: 20 }}
-              />
-            </div>
-          </div>
+          <div className={styles.mockupGlow} />
+          <Image
+            src="https://framerusercontent.com/images/PsnafjgqXUjz4UlQBa0be8waY.png"
+            alt="WebContent Platform"
+            width={620}
+            height={440}
+            className={styles.appMockup}
+            style={{ objectFit: 'contain' }}
+            priority
+          />
         </div>
       </div>
     </section>

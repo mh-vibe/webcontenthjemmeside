@@ -2,14 +2,14 @@
   position: relative;
   padding: 80px 0 80px;
   overflow: hidden;
-  background: var(--color-bg-accent);
+  background: #feeeED;
   min-height: 600px;
 }
 
 .bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 60% 0%, rgba(243, 88, 74, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 70% at 70% 50%, rgba(243, 88, 74, 0.18) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -22,8 +22,8 @@
 }
 
 .content {
-  flex: 1;
-  max-width: 560px;
+  flex: 0 0 55%;
+  max-width: 55%;
 }
 
 .badge {
@@ -90,25 +90,6 @@
   transform: translateY(-1px);
 }
 
-.secondaryCta {
-  display: inline-flex;
-  align-items: center;
-  padding: 14px 24px;
-  background: white;
-  color: var(--color-text-primary);
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--color-border);
-  transition: border-color 0.15s, transform 0.1s;
-  white-space: nowrap;
-}
-
-.secondaryCta:hover {
-  border-color: var(--color-text-muted);
-  transform: translateY(-1px);
-}
-
 .stats {
   display: flex;
   align-items: center;
@@ -139,32 +120,29 @@
 }
 
 .visual {
-  flex: 0 0 auto;
-}
-
-.phonesWrapper {
-  display: flex;
-  align-items: flex-end;
-  gap: -12px;
+  flex: 0 0 45%;
+  max-width: 45%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.phoneLeft {
-  transform: translateX(16px) rotate(-4deg);
+.mockupGlow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(243, 88, 74, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.appMockup {
+  position: relative;
   z-index: 1;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.12));
-}
-
-.phoneCenter {
-  z-index: 2;
-  filter: drop-shadow(0 12px 32px rgba(0,0,0,0.16));
-  transform: translateY(-16px);
-}
-
-.phoneRight {
-  transform: translateX(-16px) rotate(4deg);
-  z-index: 1;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.12));
+  border-radius: 16px;
+  box-shadow: 0 0 80px 20px rgba(243, 88, 74, 0.25), 0 24px 48px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 1024px) {
@@ -172,9 +150,14 @@
     gap: 40px;
   }
 
-  .phoneLeft,
-  .phoneRight {
-    display: none;
+  .content {
+    flex: 0 0 52%;
+    max-width: 52%;
+  }
+
+  .visual {
+    flex: 0 0 44%;
+    max-width: 44%;
   }
 }
 
@@ -189,20 +172,15 @@
   }
 
   .content {
+    flex: none;
     max-width: 100%;
+    width: 100%;
   }
 
   .visual {
+    flex: none;
+    max-width: 100%;
     width: 100%;
-    overflow: hidden;
-  }
-
-  .phonesWrapper {
-    justify-content: center;
-  }
-
-  .phoneCenter {
-    transform: none;
   }
 
   .stats {
