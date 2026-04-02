@@ -80,10 +80,11 @@
   aspect-ratio: 9/16;
 }
 
-.creatorCard img {
+.creatorVideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .rating {

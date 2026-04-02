@@ -25,8 +25,8 @@ export default function HeroSection({ locale }: Props) {
           </a>
           <a href="https://calendly.com/webcontent" className={styles.secondaryCta}>
             <Image
-              src="https://framerusercontent.com/images/39TxLXlTK7Jh6cfXqcAkgGrlUw.png"
-              alt=""
+              src="https://framerusercontent.com/images/g7S8TLu6JhPDMIomRoLcXtffCA.png"
+              alt="Seb"
               width={28}
               height={28}
               className={styles.ctaAvatar}

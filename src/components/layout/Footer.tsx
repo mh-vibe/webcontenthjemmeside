@@ -39,17 +39,10 @@ export default function Footer({ locale }: FooterProps) {
 
             <div className={styles.expertsRow}>
               <span className={styles.expertsLabel}>Eksperter i:</span>
-              <svg height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Meta">
-                <path d="M3 8c0-1.8.9-3.4 2.3-4.3C3.2 4.4 2 6.1 2 8s1.2 3.6 3.3 4.3C3.9 11.4 3 9.8 3 8z" fill="#0082FB"/>
-                <path d="M8 3.2c-.9 0-1.7.3-2.3.7.6-.4 1.4-.7 2.3-.7s1.7.3 2.3.7c-.6-.4-1.4-.7-2.3-.7z" fill="#0082FB"/>
-                <path d="M13 8c0 1.7-.8 3.4-2.2 4.3C12.8 11.6 14 9.9 14 8s-1.2-3.6-3.2-4.3C12.2 4.6 13 6.3 13 8z" fill="#0082FB"/>
-                <path d="M11 3.7C10.4 3.2 9.6 3 8.7 3H8c-.9 0-1.7.3-2.3.7C4.3 4.6 3 6.2 3 8c0 1.2.3 2.2.8 3 .5.8 1.3 1.4 2.2 1.4.8 0 1.4-.3 2-.9.2-.3.4-.5.6-.9.2.4.4.6.6.9.6.6 1.2.9 2 .9.9 0 1.6-.6 2.2-1.4.5-.8.8-1.8.8-3 0-1.7-.8-3.3-2.2-4.3z" fill="#0082FB"/>
-                <text x="18" y="11" fontFamily="Arial, sans-serif" fontWeight="700" fontSize="11" fill="#1c1e21">Meta</text>
-              </svg>
-              <svg height="16" viewBox="0 0 60 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="TikTok">
-                <path d="M6 0h2c.1 1.4 1.1 2.4 2.5 2.6v1.9c-.9 0-1.7-.3-2.3-.8v3.6c0 1.8-1.5 3.3-3.3 3.3S1.6 9.1 1.6 7.3 3.1 4 4.9 4c.2 0 .3 0 .5.1v1.9c-.2 0-.3-.1-.5-.1-.8 0-1.4.6-1.4 1.4s.6 1.4 1.4 1.4 1.4-.6 1.4-1.4V0h-.3z" fill="#010101"/>
-                <text x="14" y="11" fontFamily="Arial, sans-serif" fontWeight="800" fontSize="11" fill="#010101">TikTok</text>
-              </svg>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://framerusercontent.com/images/jEKJk1RKf1FbpSA1OxPEl0xFg.png" alt="Meta" height={20} style={{ width: 'auto' }} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://framerusercontent.com/images/TWAnC7GX1Wmv3D2Kah1ir7RfxWA.png" alt="TikTok" height={20} style={{ width: 'auto' }} />
             </div>
 
             <Link href={localePath('/creators')} className={styles.becomeCreatorLink}>
@@ -57,23 +50,13 @@ export default function Footer({ locale }: FooterProps) {
             </Link>
 
             <div className={styles.appBadges}>
-              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className={styles.appBadge}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                </svg>
-                <div className={styles.badgeText}>
-                  <span className={styles.badgeSub}>Download on the</span>
-                  <span className={styles.badgeMain}>App Store</span>
-                </div>
+              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://framerusercontent.com/images/zEQ6P5x54lLUwDxRoDfcZu71ZLo.png" alt="App Store" height={40} style={{ display: 'block', width: 'auto' }} />
               </a>
-              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" className={styles.appBadge}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3.18 23.76c.3.17.64.24.99.2l12.6-7.27-2.72-2.72-10.87 9.79zM.9 1.46C.34 1.96 0 2.76 0 3.8v16.4c0 1.04.34 1.84.9 2.34l.12.11 9.19-9.19v-.22L1.02 3.35.9 1.46zm19.14 10.29L17.37 9.1l-2.77 2.77 2.77 2.77 1.69-1.69c.48-.48.48-1.24-.02-1.2zm-16.06 9.01l10.87-9.79-2.72-2.72L1.02 20.76l2.96-.0z"/>
-                </svg>
-                <div className={styles.badgeText}>
-                  <span className={styles.badgeSub}>GET IT ON</span>
-                  <span className={styles.badgeMain}>Google play</span>
-                </div>
+              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://framerusercontent.com/images/cVGYo4plm9kXogkopSlQXjWtylM.png" alt="Google Play" height={40} style={{ display: 'block', width: 'auto' }} />
               </a>
             </div>
           </div>
@@ -105,19 +88,16 @@ export default function Footer({ locale }: FooterProps) {
         <div className={styles.bottom}>
           <div className={styles.socials}>
             <a href="https://www.facebook.com/61555118136664/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className={styles.socialIcon}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://framerusercontent.com/images/hBaxNtbVi5lW0xoLgEoOAqIidHI.png" alt="Facebook" width={18} height={18} style={{ objectFit: 'contain' }} />
             </a>
             <a href="https://www.instagram.com/webcontent.dk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://framerusercontent.com/images/70wbFkYXogXaN9fmtBtZ5ME5DlE.png" alt="Instagram" width={18} height={18} style={{ objectFit: 'contain' }} />
             </a>
             <a href="https://dk.linkedin.com/company/webcontentdk" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={styles.socialIcon}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://framerusercontent.com/images/euCoaJZrlPrFlIb9f6OrSoOlbc.png" alt="LinkedIn" width={18} height={18} style={{ objectFit: 'contain' }} />
             </a>
           </div>
 

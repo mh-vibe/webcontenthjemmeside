@@ -22,15 +22,13 @@ export default function WhySection({ locale }: Props) {
     ugcTypes('metaAds'),
   ];
 
-  const CREATOR_IMAGES = [
-    'https://framerusercontent.com/images/0f6elDFlPOra037g6PexamN7rk.png',
-    'https://framerusercontent.com/images/39TxLXlTK7Jh6cfXqcAkgGrlUw.png',
-    'https://framerusercontent.com/images/6ByQwLiPu4SIB7wRNX01axYl88.png',
-    'https://framerusercontent.com/images/8t16C3ZN04rpfQGNyTnUJw7SH6E.png',
-    'https://framerusercontent.com/images/H8I02191s0XUI2x9s8anculpLE.png',
-    'https://framerusercontent.com/images/WOoKLBWbV31qnJRV7IqWWbeG98.png',
-    'https://framerusercontent.com/images/aU4CoI1USIB7iENDPyoqHnoZHg.png',
-    'https://framerusercontent.com/images/uF5M8NSKbOsdz7gYGDdf7FqnZM.png',
+  const CREATOR_VIDEOS = [
+    'https://framerusercontent.com/assets/lpIbySSpuGw71yTxJw85XWyzs.mp4',
+    'https://framerusercontent.com/assets/CBtCetxbm4nF2c0mvnxydilFtcw.mp4',
+    'https://framerusercontent.com/assets/b9IVCEkP8tjX4mQVD34UO6NSlI8.mp4',
+    'https://framerusercontent.com/assets/U6hEq2JIBK46WsO2jarimxTMis.mp4',
+    'https://framerusercontent.com/assets/6ZYcSgtYUNJDs8fpSJE7gMM6bM.mp4',
+    'https://framerusercontent.com/assets/EXEZiLY8ElISgkGICKGinXwHWT8.mp4',
   ];
 
   return (
@@ -67,9 +65,11 @@ export default function WhySection({ locale }: Props) {
               </Link>
             </div>
             <div className={styles.creatorGrid}>
-              {CREATOR_IMAGES.slice(0, 6).map((src, i) => (
+              {CREATOR_VIDEOS.slice(0, 6).map((src, i) => (
                 <div key={i} className={styles.creatorThumb}>
-                  <Image src={src} alt="Creator" width={76} height={100} style={{ objectFit: 'cover' }} />
+                  <video autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}>
+                    <source src={src} type="video/mp4" />
+                  </video>
                 </div>
               ))}
             </div>

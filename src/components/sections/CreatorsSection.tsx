@@ -2,31 +2,24 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import styles from './CreatorsSection.module.css';
 
 type Props = { locale: string };
 
-const CREATOR_IMAGES = [
-  'https://framerusercontent.com/images/0f6elDFlPOra037g6PexamN7rk.png',
-  'https://framerusercontent.com/images/39TxLXlTK7Jh6cfXqcAkgGrlUw.png',
-  'https://framerusercontent.com/images/6ByQwLiPu4SIB7wRNX01axYl88.png',
-  'https://framerusercontent.com/images/8t16C3ZN04rpfQGNyTnUJw7SH6E.png',
-  'https://framerusercontent.com/images/H8I02191s0XUI2x9s8anculpLE.png',
-  'https://framerusercontent.com/images/WOoKLBWbV31qnJRV7IqWWbeG98.png',
-  'https://framerusercontent.com/images/aU4CoI1USIB7iENDPyoqHnoZHg.png',
-  'https://framerusercontent.com/images/uF5M8NSKbOsdz7gYGDdf7FqnZM.png',
-];
-
-const CATEGORIES = [
-  'Alt',
-  'Skønhed/Tøj',
-  'Mad & Fitness',
-  'Skincare & Compact',
-  'Tøj & Skødyr',
+const CREATOR_VIDEOS = [
+  'https://framerusercontent.com/assets/5lAz5wsxYZoyaw9auQXx6k.mp4',
+  'https://framerusercontent.com/assets/SzlznJPy1ky6BFARbncTixonnd8.mp4',
+  'https://framerusercontent.com/assets/DTUz6BGYLH76Rd17DnMbChwnZ94.mp4',
+  'https://framerusercontent.com/assets/M6RCEfS3vMoV6KaaYLDqpaJzQ4.mp4',
+  'https://framerusercontent.com/assets/vaTHykBUnHbckpPG95wNfUqeg.mp4',
+  'https://framerusercontent.com/assets/qctTi38kJVn3Ku3GPJwQMiH6EQ.mp4',
+  'https://framerusercontent.com/assets/ARd3GKIdEl7hHE8OEGtP06g8Ew.mp4',
+  'https://framerusercontent.com/assets/57zchJHnVa7aiZIK9jsuhpTW9iA.mp4',
 ];
 
 const RATINGS = [4.9, 4.8, 5.0, 4.7, 4.9, 4.8, 4.9, 5.0];
+
+const CATEGORIES = ['Alt', 'Skønhed/Tøj', 'Mad & Fitness', 'Skincare & Compact', 'Tøj & Skødyr'];
 
 export default function CreatorsSection({ locale }: Props) {
   const t = useTranslations('creators');
@@ -51,15 +44,17 @@ export default function CreatorsSection({ locale }: Props) {
         </div>
 
         <div className={styles.creatorGrid}>
-          {CREATOR_IMAGES.map((src, i) => (
+          {CREATOR_VIDEOS.map((src, i) => (
             <div key={i} className={styles.creatorCard}>
-              <Image
-                src={src}
-                alt={`Creator ${i + 1}`}
-                fill
-                style={{ objectFit: 'cover' }}
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className={styles.creatorVideo}
+              >
+                <source src={src} type="video/mp4" />
+              </video>
               <div className={styles.rating}>⭐ {RATINGS[i].toFixed(1)}</div>
             </div>
           ))}

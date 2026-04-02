@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import styles from './ScaleSection.module.css';
+/* eslint-disable @next/next/no-img-element */
 
 type Props = { locale: string };
 
@@ -58,19 +59,8 @@ export default function ScaleSection({ locale }: Props) {
 
         <div className={styles.experts}>
           <span className={styles.expertsLabel}>{t('expertsIn')}</span>
-          {/* Meta logo */}
-          <svg height="20" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Meta">
-            <path d="M6.8 20c0-4.5 2.3-8.6 5.8-10.8C8.1 11 5 15.1 5 20s3.1 9 7.6 10.8C8.9 28.5 6.8 24.3 6.8 20z" fill="#0082FB"/>
-            <path d="M20 8c-2.2 0-4.2.7-5.8 1.9 1.6-1.2 3.6-1.9 5.8-1.9s4.2.7 5.8 1.9C24.2 8.7 22.2 8 20 8z" fill="#0082FB"/>
-            <path d="M33.2 20c0 4.3-2.1 8.5-5.6 10.8C32 28.9 35 24.9 35 20s-3-8.9-7.4-10.8C31.1 11.5 33.2 15.7 33.2 20z" fill="#0082FB"/>
-            <path d="M27.6 9.2C25.9 8 23.9 7.2 21.7 7.1l-.2-.1H20c-2.2 0-4.2.7-5.8 1.9-3.5 2.2-5.8 6.3-5.8 10.8 0 2.9.8 5.5 2.1 7.6 1.4 2.1 3.4 3.5 5.5 3.5 1.9 0 3.5-.8 4.9-2.5.5-.6 1-1.3 1.5-2.2.5.9 1 1.6 1.5 2.2 1.4 1.7 3 2.5 4.9 2.5 2.1 0 4.1-1.4 5.5-3.5 1.3-2.1 2.1-4.7 2.1-7.6 0-4.3-2.1-8.5-5.7-10.8h-.1z" fill="#0082FB"/>
-            <text x="42" y="27" fontFamily="Arial, sans-serif" fontWeight="700" fontSize="22" fill="#1c1e21">Meta</text>
-          </svg>
-          {/* TikTok logo */}
-          <svg height="20" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="TikTok">
-            <path d="M14.4 0h4.8c.3 3.5 2.7 6.1 6.3 6.4v4.7c-2.2-.1-4.2-.8-5.8-2v9c0 4.5-3.7 8.2-8.2 8.2C7 26.3 3.3 22.6 3.3 18.1S7 9.9 11.5 9.9c.4 0 .8 0 1.2.1v4.8c-.4-.1-.8-.1-1.2-.1-2 0-3.6 1.6-3.6 3.6s1.6 3.6 3.6 3.6 3.6-1.6 3.6-3.6V0h-.7z" fill="#010101"/>
-            <text x="32" y="22" fontFamily="Arial, sans-serif" fontWeight="800" fontSize="18" fill="#010101">TikTok</text>
-          </svg>
+          <img src="https://framerusercontent.com/images/jEKJk1RKf1FbpSA1OxPEl0xFg.png" alt="Meta" height={24} style={{ width: 'auto' }} />
+          <img src="https://framerusercontent.com/images/TWAnC7GX1Wmv3D2Kah1ir7RfxWA.png" alt="TikTok" height={24} style={{ width: 'auto' }} />
         </div>
       </div>
     </section>
